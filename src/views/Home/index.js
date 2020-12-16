@@ -16,6 +16,7 @@ const Home = () => {
       id: uuidv4(),
       task: text,
       done: false,
+      description: 'TAREFA CONCLUIDA',
     });
     setItems(newItems);
   };

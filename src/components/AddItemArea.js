@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled from 'styled-components/native';
+import styled, { css } from 'styled-components/native';
 
 const AddItemArea = styled.View`
   flex-direction: row;
@@ -15,9 +15,9 @@ const Input = styled.TextInput`
 `;
 
 const ButtonAdd = styled.TouchableOpacity`
-  border-radius: 20px;
+  border-radius: 12px;
   width: 20%;
-  background-color: #2102a163;
+  background-color: #897de0;
   justify-content: center;
   align-items: center;
 `;

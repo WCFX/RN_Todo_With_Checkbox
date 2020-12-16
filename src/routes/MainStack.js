@@ -9,8 +9,8 @@ export default () => (
   <Navigator
     screenOptions={{
       headerTitleAlign: 'center',
-      headerTitle: 'Hello World !',
-      headerTintColor: '#F0F',
+      headerTitle: 'Crie sua lista',
+      headerTintColor: '#897de0',
     }}
   >
     <Screen name="Home" component={Home} />
