@@ -20,13 +20,21 @@ const Home = () => {
     setItems(newItems);
   };
 
+  const toggleDone = (index) => {
+    let newItems = [...items];
+    newItems[index].done = !newItems[index].done;
+    setItems(newItems);
+  };
+
   return (
     <Container>
       <AddItemArea onAdd={handleAddNewItem} />
       <Lista
         data={items}
         keyExtractor={(item) => item.id}
-        renderItem={({ item }) => <ListItem data={item} />}
+        renderItem={({ item, index }) => (
+          <ListItem Checkbox={() => toggleDone(index)} data={item} />
+        )}
       />
     </Container>
   );

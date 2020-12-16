@@ -19,11 +19,13 @@ const ItemCheck = styled.View`
   border: 5px solid #ccc;
 `;
 
-export default ({ data }) => {
+export default ({ data, Checkbox }) => {
   return (
-    <Item onPress={() => {}} activeOpacity={0.7}>
+    <Item onPress={Checkbox} activeOpacity={0.7}>
       <>
-        <ItemText>{data.task}</ItemText>
+        <ItemText>
+          {data.task} - {data.done.toString()}{' '}
+        </ItemText>
         <ItemCheck />
       </>
     </Item>
